@@ -25,5 +25,9 @@ RSpec.describe StringCalculator do
     it 'when string is "2,3,4,5,6,7,8", return 35' do
       expect(subject.add("2,3,4,5,6,7,8")).to eq(35)
     end
+
+    it 'when string is "1\n2,3", return 6' do
+      expect(subject.add("1\n2,3")).to eq(6)
+    end
   end
 end
