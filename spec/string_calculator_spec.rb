@@ -17,5 +17,13 @@ RSpec.describe StringCalculator do
     it 'when string is "1,2", return 3' do
       expect(subject.add("1,2")).to eq(3)
     end
+
+    it 'when string is "23,44,99", return 166' do
+      expect(subject.add("23,44,99")).to eq(166)
+    end
+
+    it 'when string is "2,3,4,5,6,7,8", return 35' do
+      expect(subject.add("2,3,4,5,6,7,8")).to eq(35)
+    end
   end
 end
