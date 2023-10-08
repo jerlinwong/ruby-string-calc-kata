@@ -6,7 +6,7 @@ class StringCalculator
       0
     elsif
       output = 0
-      input_string.split(",").each do |num|
+      input_string.split(/[\n,]/).each do |num|
         output = num.to_i + output
       end
       output
